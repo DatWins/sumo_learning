@@ -25,17 +25,6 @@ body {
   font-size: clamp(1.4rem, 3.6vw, 2.2rem);
   line-height: 1.2;
 }
-.intro-header h1::after {
-  content: "俳句";
-  display: block;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: .6em;
-  color: #4d5b73;
-  margin-top: .4rem;
-}
 
 /* Poems: bold italic serif on a soft paper panel so they stay readable */
 .blog-post,
@@ -65,7 +54,7 @@ article,
   font-size: 0 !important;
 }
 .navbar-custom .navbar-brand::before {
-  content: "the haiku";
+  content: "sumo";
   font-size: 1.7rem;
   font-weight: 700;
 }
@@ -94,31 +83,6 @@ footer .row {
   letter-spacing: 0.04em;
 }
 
-/* Chickadee landing on the red flower at the top-left of the header frame.
-   Positioned in the framed box, so it stays on the flower at every size. */
-.intro-header .page-heading {
-  position: relative;
-}
-.intro-header .page-heading::before {
-  content: "";
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: calc(5.4% - 82px);
-  top: calc(26% - 112px);
-  background: url("../birds/chickadee-landing.webp") center / contain no-repeat;
-  mix-blend-mode: multiply;
-  pointer-events: none;
-  z-index: 2;
-}
-@media (max-width: 767px) {
-  .intro-header .page-heading::before {
-    width: 96px;
-    height: 96px;
-    left: calc(10.6% - 50px);
-    top: calc(16% - 66px);
-  }
-}
 
 /* Flower picture for each poem (front matter `image:`), in full colour */
 .post-preview .post-image,
@@ -154,25 +118,15 @@ footer .row {
   mix-blend-mode: multiply;
 }
 
-/* Watercolour flower frame around the home-page title (tikz-flora wreath).
-   A wide frame on larger screens, a tall one on phones. */
-.intro-header .page-heading {
-  background: url("../flora/header-frame-wide.webp") center / 100% 100% no-repeat;
-  padding: 4.5rem 9% 4rem;
-}
 @media (max-width: 767px) {
-  .intro-header .page-heading {
-    background-image: url("../flora/header-frame-tall.webp");
-    padding: 4.5rem 19% 4rem;
-  }
   .intro-header .page-heading h1 {
     font-size: 1.55rem !important;
   }
 }
 
 
-/* Sumo line drawing above the home title, inside the flower frame */
-.intro-header .home-sumo {
+/* Sumo line drawing above the title on every page */
+.intro-header .page-sumo {
   display: block;
   width: min(15rem, 70%);
   height: auto;

@@ -4,10 +4,9 @@ draft: false
 comments: false
 ---
 
-*a place for short poems —*
-*haiku, tanka, and the quiet*
-*in between*
+*A place to study the 82 kimarite —*
+*the winning techniques of sumo.*
 
 ---
 
-Each poem is its own post. Browse by **Tags** for form (haiku / tanka) or by **Seasons** for time of year.
+Each post covers one kimarite: how it works, when it appears, and who uses it well. Browse by **Tags** for technique type or by **Seasons** for the basho it was spotted in.

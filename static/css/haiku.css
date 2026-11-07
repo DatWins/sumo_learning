@@ -34,17 +34,14 @@ article,
   font-family: "Lora", serif;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   line-height: 1.8;
   color: #23262e;
 }
 .post-preview,
 .blog-post {
-  background: rgba(253, 252, 249, .85);
-  backdrop-filter: blur(4px);
+  background: transparent;
   padding: 1.25rem 1.75rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 18px rgba(60, 70, 90, .12);
   margin-bottom: 1.25rem;
 }
 

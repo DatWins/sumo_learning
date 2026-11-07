@@ -1,7 +1,7 @@
 baseURL = "https://datwins.github.io/sumo_learning/"
 locale = "en-US"
 defaultContentLanguage = "en"
-title = "the haiku"
+title = "Sumo Techniques"
 theme = "beautifulhugo"
 
 [pagination]

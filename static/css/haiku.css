@@ -1,15 +1,13 @@
-/* the haiku: Fuji background + Cormorant Garamond title (Beautiful Hugo overrides) */
-/* Linen paper from the Chickadee site, with a perched chickadee on the left */
-html {
-  background: #efe9dc url("../textures/linen.webp") center top / 1100px auto repeat !important;
-}
+/* Sumo blog — style overrides for Beautiful Hugo */
+
+/* Linen paper background */
+html,
 body {
   background: #efe9dc url("../textures/linen.webp") center top / 1100px auto repeat !important;
   position: relative;
 }
 
-
-/* Title: bolder serif with a Japanese subtitle */
+/* Page and post titles */
 .intro-header h1,
 .page-heading h1,
 .site-heading h1,
@@ -21,41 +19,16 @@ body {
   color: #1f2430 !important;
 }
 .intro-header h1 {
-  white-space: pre-line;
   font-size: 2.2rem;
   line-height: 1.2;
 }
-
-/* Page body text: readable serif */
-article,
-.container[role="main"] .post-entry {
-  font-family: "Lora", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: #23262e;
+@media (max-width: 767px) {
+  .intro-header h1 {
+    font-size: 1.9rem !important;
+  }
 }
 
-/* Post previews and full posts: italic serif */
-.blog-post,
-.post-preview {
-  font-family: "Lora", serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: #23262e;
-}
-.post-preview,
-.blog-post {
-  background: transparent;
-  padding: 1.25rem 1.75rem;
-  margin-bottom: 1.25rem;
-}
-
-/* The theme prints the three-line home title in the menu bar too.
-   Show the short site name there instead. */
+/* Navbar brand */
 .navbar-custom .navbar-brand {
   font-size: 0 !important;
 }
@@ -65,71 +38,51 @@ article,
   font-weight: 700;
 }
 
-/* Post dates: bolder */
+/* Body text: plain readable serif, left-aligned, normal weight */
+article,
+.blog-post,
+.post-preview,
+.container[role="main"] .post-entry {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #23262e;
+  text-align: left;
+}
+
+/* Post preview cards: no background panel */
+.post-preview,
+.blog-post {
+  background: transparent;
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Post preview titles */
+.post-preview h2.post-title {
+  font-weight: 700 !important;
+  font-style: normal;
+  font-size: 1.1rem !important;
+  color: #3a3a3a !important;
+  letter-spacing: 0.02em;
+}
+
+/* Post dates */
 .post-preview .post-meta,
 .post-preview .post-meta time,
 .post-preview .post-meta a {
-  font-weight: 700;
+  font-weight: 600;
   color: #555;
 }
 
-/* Footer: same linen paper as the page, no white band */
+/* Footer: transparent so linen shows through */
 footer,
 footer .container,
 footer .row {
   background: transparent !important;
 }
-
-/* The small date line above each poem (the post title) — bold and dark */
-.post-preview h2.post-title {
-  font-weight: 700 !important;
-  font-style: italic;
-  font-size: 1rem !important;
-  color: #3a3a3a !important;
-  letter-spacing: 0.04em;
-}
-
-
-/* Flower picture for each poem (front matter `image:`), in full colour */
-.post-preview .post-image,
-.post-preview .post-image:hover {
-  filter: none !important;
-  width: 170px !important;
-  height: 250px !important;
-}
-.post-preview .post-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  border-radius: 0 !important;
-  mix-blend-mode: multiply;
-}
-@media (max-width: 767px) {
-  .post-preview .post-image,
-  .post-preview .post-image:hover {
-    width: 100% !important;
-    height: 200px !important;
-  }
-}
-
-/* Flower drawing above the poem on a post's own page */
-.blog-post .poem-flower {
-  text-align: center;
-  margin: 0 auto 1.25rem;
-}
-.blog-post .poem-flower img {
-  max-height: 300px;
-  max-width: 70%;
-  width: auto;
-  mix-blend-mode: multiply;
-}
-
-@media (max-width: 767px) {
-  .intro-header h1 {
-    font-size: 1.9rem !important;
-  }
-}
-
 
 /* Sumo line drawing above the title on every page */
 .intro-header .page-sumo {

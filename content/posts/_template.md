@@ -1,24 +1,18 @@
 ---
-title: "YYYY-MM-DD"
+title: "Kimarite name here"
 date: 2026-01-01
 draft: true
 tags:
-  - haiku
-categories: ["autumn"]
-# flower picture: flora-spring / flora-summer / flora-autumn / flora-autumn2 / flora-autumn3 / flora-winter
-image: "/flora/flora-autumn.webp"
+  - push
+categories: ["throw"]
 ---
 <!--
 HOW TO USE
-1. Copy this file, rename it to the date: 2026-10-26.md
+1. Copy this file, rename it to the kimarite: yorikiri.md
 2. Set the date and change draft: true → draft: false
-3. Tags: haiku  tanka  haibun
-4. Categories (season): spring  summer  autumn  winter
-5. Write the poem below — one blank line between stanzas.
-   For haiku: three lines, no title needed.
-   For tanka: five lines (5-7-5-7-7 syllables).
+3. Tags: push  pull  throw  trip  special
+4. Categories: belt  leg  arm  body  special
+5. Write paragraphs below — just normal text, no special formatting needed.
 -->
 
-old pond  
-a frog jumps in,  
-sound of water
+Write your post here. Explain the kimarite in plain paragraphs.

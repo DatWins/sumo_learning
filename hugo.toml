@@ -23,7 +23,7 @@ theme = "beautifulhugo"
     weight = 10
 
 [Params]
-  homeTitle = "All About Kimarites"
+  homeTitle = "All About Sumo"
   subtitle = ""
   mainSections = ["post", "posts"]
   logo = "/img/logo.webp"

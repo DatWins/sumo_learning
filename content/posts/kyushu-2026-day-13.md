@@ -47,6 +47,8 @@ The yusho is effectively being decided here. Wakamotoharu (11–1) is the feel-g
 
 The model backs **Onosato**: Yokozuna rank, odds advantage, and the fact that at Day 13 the pressure on a 11–1 rikishi is enormous. If Wakamotoharu wins, the yusho race stays open to Day 15. If Onosato wins, Wakamotoharu falls to 11–2 and the race narrows significantly.
 
+{{< youtube id="QQvp-mdP8Ug" start="1856" >}}
+
 ## Notable Calls
 
 **Tamawashi (8–4) at 20% odds** — the market is heavily on Yoshinofuji (6–6), but Tamawashi has a winning record and needs two more wins for kachikoshi. Record wins here.

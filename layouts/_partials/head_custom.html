@@ -70,6 +70,36 @@
     margin: 2rem 0;
   }
 
+  /* YouTube embed: full bleed, no side gaps */
+  .blog-post .youtube-embed,
+  .blog-post iframe[src*="youtube"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  /* Beautiful Hugo wraps shortcodes in a div — make it full width too */
+  .blog-post > div[style*="position:relative"],
+  .blog-post > div[style*="position: relative"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-bottom: 56.25% !important; /* 16:9 */
+  }
+  .blog-post > div[style*="position:relative"] iframe,
+  .blog-post > div[style*="position: relative"] iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  @media (max-width: 575px) {
+    /* On phones: break out of the post padding so video is edge-to-edge */
+    .blog-post > div[style*="position:relative"],
+    .blog-post > div[style*="position: relative"] {
+      margin-left: -1rem !important;
+      margin-right: -1rem !important;
+      width: calc(100% + 2rem) !important;
+    }
+  }
+
   /* Tables: full width, clean */
   .blog-post table {
     width: 100%;
